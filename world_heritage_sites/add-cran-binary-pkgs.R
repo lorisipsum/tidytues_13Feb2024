@@ -43,7 +43,7 @@ install_bins <- function(cran_pkgs, library_path, type, decompress,
 
 if (dir.exists("r-mac")) {
   install_bins(cran_pkgs = cran_pkgs, library_path = file.path("r-mac", "library"),
-               type = "mac.binary.el-capitan", decompress = untar)
+               type = "source", decompress = untar)
 }
 
 if (dir.exists("r-win")) {
