@@ -12,7 +12,7 @@ library(ggalluvial)
 library(viridis)
 
 
-heritage <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2024/2024-02-06/heritage.csv')
+heritage <- readr::read_csv('www//heritage.csv')
 heritage$flags <- c("www/Norway.png", "www/Denmark.png", "www/Sweden.png")
 
 title = tags$div(tags$strong("100 Graphs Dashboard"))
