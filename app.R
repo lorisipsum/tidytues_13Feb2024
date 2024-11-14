@@ -59,6 +59,12 @@ output$bodypanel <- renderUI({tabItems(
     column(6,
            selectInput("chosen_graph", tags$label("Graph of choice", style = "color: #fcfcfc;"), choices = graph_choices)
     ),
+    fluidRow(
+      box(
+        title = "Selected Input",
+        textOutput("selected_input_output")
+      )
+    ),
     br(), br(),
     plotOutput("graph_of_choice"),
     br(), br(), br(),
@@ -158,7 +164,9 @@ output$graph_of_choice <- renderPlot({
       geom_image() 
   }
 })
- 
+output$selected_input_output <- renderText({
+  paste("Selected Input: ", input$chosen_graph)
+})
 } 
   
 shinyApp(ui = ui, server = server)
