@@ -1,0 +1,41 @@
+{
+  "name": "myapp",
+  "productName": "myapp",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "author": {
+    "name": "lorisipsum",
+    "email": "dr.brianthompson1@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zarathucorp/shiny-electron-template-m1"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "esm": "^3.2.25",
+    "execa": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "@electron-forge/cli": "^7.5.0",
+    "@electron-forge/maker-deb": "^7.5.0",
+    "@electron-forge/maker-rpm": "^7.5.0",
+    "@electron-forge/maker-squirrel": "^7.5.0",
+    "@electron-forge/maker-zip": "^7.5.0",
+    "electron": "8.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "fs-extra": "^8.1.0"
+  }
+}
